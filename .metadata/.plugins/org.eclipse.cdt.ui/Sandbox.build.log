@@ -1,0 +1,10 @@
+12:47:21 **** Incremental Build of configuration Debug for project Sandbox ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+/bin/sh: gcc: command not found
+make: *** [main.o] Error 127
+
+12:47:22 Build Finished (took 1s.258ms)
+

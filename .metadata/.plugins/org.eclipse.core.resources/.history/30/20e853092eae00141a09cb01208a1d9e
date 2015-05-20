@@ -1,0 +1,59 @@
+/** @file opcontrol.c
+ * @brief File for operator control code
+ *
+ * This file should contain the user operatorControl() function and any functions related to it.
+ */
+
+#include "main.h"
+
+
+/** Variable to hold reference to the drive task */
+TaskHandle drivingTask;
+/** Variable to hold reference to the manipulator task */
+TaskHandle manipulatorTask;
+/** Variable to hold reference to the speaker task */
+TaskHandle speakerTask;
+
+/**
+ * This task drives the motors required to move the robot.
+ * 	Front Left = 2
+ * 	Front Right = 3
+ * 	Back Left = 4
+ * 	Back Right = 5
+ */
+void DrivingTask(void *arg) {
+	int X2 = 0, Y1 = 0, X1 = 0, threshold = 15;
+	while (1) {
+		Y1 = (abs(joystickGetAnalog(1, 3)) > threshold ? joystickGetAnalog(1, 3) : 0);
+		X1 = (abs(joystickGetAnalog(1, 4)) > threshold ? joystickGetAnalog(1, 4) : 0);
+		X2 = (abs(joystickGetAnalog(1, 2)) > threshold ? joystickGetAnalog(1, 2) : 0);
+		motorSet(2, Y1 + X2 + X1);
+		motorSet(3, Y1 - X2 - X1);
+		motorSet(4, Y1 + X2 - X1);
+		motorSet(5, Y1 - X2 + X1);
+	}
+}
+
+/**
+ * This task drives the motors required to use our manipulator.
+ */
+void ManipulatorTask(void *arg) {
+
+}
+
+/**
+ * This task controls the output of the speaker on our robot.
+ */
+void SpeakerTask(void *arg) {
+
+}
+
+void operatorControl() {
+	drivingTask = taskCreate(DrivingTask, TASK_DEFAULT_STACK_SIZE, NULL, TASK_PRIORITY_DEFAULT);
+	manipulatorTask = taskCreate(ManipulatorTask, TASK_DEFAULT_STACK_SIZE, NULL, TASK_PRIORITY_DEFAULT);
+	speakerTask = taskCreate(SpeakerTask, TASK_DEFAULT_STACK_SIZE, NULL, TASK_PRIORITY_DEFAULT);
+
+	while(1) {
+		//This method should never exit, loop is necessary to keep robot running.
+	}
+}

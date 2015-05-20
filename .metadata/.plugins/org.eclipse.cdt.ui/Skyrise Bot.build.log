@@ -1,0 +1,21 @@
+08:08:21 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:201:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:202:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20264	   1120	   3888	  25272	   62b8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+
+08:08:23 Build Finished (took 2s.200ms)
+

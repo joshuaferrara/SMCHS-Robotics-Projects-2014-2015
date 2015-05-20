@@ -1,0 +1,2155 @@
+09:09:11 **** Incremental Build of configuration Default for project Iron Eagle ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:\Users\joshua.ferrara\Desktop\PROS\$_OUTDIR;C:/Program Files (x86)/Java/jre7/bin/client;C:/Program Files (x86)/Java/jre7/bin;C:/Program Files (x86)/Java/jre7/lib/i386;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\QuickTime\QTSystem\]
+09:10:18 **** Incremental Build of configuration Default for project Iron Eagle ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  11580	      0	   3840	  15420	   3c3c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+09:12:53 **** Build of configuration Default for project Can Cleanup ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12848	      8	   3864	  16720	   4150	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+09:45:19 **** Incremental Build of configuration Default for project Can Cleanup ****
+make all 
+make[1]: Nothing to be done for `all'.
+09:45:21 **** Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'DrivingTask':
+opcontrol.c:60:2: error: too few arguments to function 'joystickGetAnalog'
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:35:
+../include/API.h:121:5: note: declared here
+opcontrol.c:61:1: error: expected expression before '}' token
+opcontrol.c:58:30: warning: unused variable 'threashold' [-Wunused-variable]
+opcontrol.c:58:22: warning: unused variable 'X1' [-Wunused-variable]
+opcontrol.c:58:14: warning: unused variable 'Y1' [-Wunused-variable]
+opcontrol.c:58:6: warning: unused variable 'X2' [-Wunused-variable]
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+09:48:19 **** Incremental Build of configuration Default for project Can Cleanup ****
+make all 
+make[1]: Nothing to be done for `all'.
+09:48:21 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'DrivingTask':
+opcontrol.c:58:30: warning: unused variable 'threshold' [-Wunused-variable]
+Command canceled
+09:54:44 **** Incremental Build of configuration Default for project Can Cleanup ****
+make all 
+make[1]: Nothing to be done for `all'.
+09:54:46 **** Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12220	      0	   3856	  16076	   3ecc	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+10:19:46 **** Incremental Build of configuration Default for project Can Cleanup ****
+make all 
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12848	      8	   3864	  16720	   4150	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+10:19:49 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12276	      0	   3856	  16132	   3f04	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+10:20:43 **** Incremental Build of configuration Default for project Can Cleanup ****
+make all 
+make[1]: Nothing to be done for `all'.
+10:20:45 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12276	      0	   3856	  16132	   3f04	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:03:23 **** Incremental Build of configuration Default for project Can Cleanup ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:03:25 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:47:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:47:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:48:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:48:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:49:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:49:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:53:1: error: initializer element is not constant
+opcontrol.c: In function 'SpeakerTask':
+opcontrol.c:62:4: error: too few arguments to function 'speakerPlayRtttl'
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: declared here
+opcontrol.c:63:4: error: expected ';' before 'lastPlayed'
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+11:03:49 **** Incremental Build of configuration Default for project Can Cleanup ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:03:50 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:47:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:47:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:48:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:48:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:49:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:49:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:53:1: error: initializer element is not constant
+opcontrol.c: In function 'SpeakerTask':
+opcontrol.c:62:4: error: too many arguments to function 'rand'
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:120:5: note: declared here
+opcontrol.c:62:4: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'int'
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+11:13:13 **** Incremental Build of configuration Default for project Can Cleanup ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:13:14 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:47:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:47:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:48:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:48:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:49:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:49:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12424	      0	   3856	  16280	   3f98	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:13:40 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:24:17 **** Incremental Build of configuration Default for project Can Cleanup ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:24:19 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:47:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:47:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:48:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:48:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:49:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:49:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12424	      0	   3856	  16280	   3f98	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:24:23 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:26:09 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:47:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:47:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:48:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:48:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:49:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:49:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12424	      0	   3856	  16280	   3f98	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:27:16 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:47:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:47:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:48:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:48:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:49:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:49:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12424	      0	   3856	  16280	   3f98	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:29:29 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:47:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:47:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:48:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:48:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:49:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:49:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12424	      0	   3856	  16280	   3f98	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:35:30 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12472	      0	   3856	  16328	   3fc8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:35:42 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:36:47 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12464	      0	   3856	  16320	   3fc0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:39:44 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12464	      0	   3856	  16320	   3fc0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:40:13 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:41:08 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c: In function 'SpeakerTask':
+opcontrol.c:72:2: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'char'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13120	      0	   3856	  16976	   4250	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:41:41 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c: In function 'SpeakerTask':
+opcontrol.c:72:2: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'char'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13120	      0	   3856	  16976	   4250	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:43:32 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13496	      0	   3856	  17352	   43c8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:48:24 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13488	      0	   3856	  17344	   43c0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:48:33 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:51:15 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13396	      0	   3856	  17252	   4364	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:51:23 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:51:34 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:53:03 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13512	      0	   3856	  17368	   43d8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:55:26 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13412	      0	   3856	  17268	   4374	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:57:11 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13500	      0	   3856	  17356	   43cc	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:57:22 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:58:47 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13396	      0	   3856	  17252	   4364	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:43:02 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c: In function 'speakerPlayRttlSetTimeout':
+opcontrol.c:71:2: error: implicit declaration of function 'speakerPlayRttl' [-Werror=implicit-function-declaration]
+opcontrol.c: In function 'SpeakerTask':
+opcontrol.c:84:5: error: implicit declaration of function 'speakerPlayRtttlSetTimeout' [-Werror=implicit-function-declaration]
+cc1.exe: some warnings being treated as errors
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+08:45:42 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c: In function 'speakerPlayRttlSetTimeout':
+opcontrol.c:71:2: error: implicit declaration of function 'speakerPlayRttl' [-Werror=implicit-function-declaration]
+opcontrol.c: In function 'SpeakerTask':
+opcontrol.c:84:5: error: implicit declaration of function 'speakerPlayRtttlSetTimeout' [-Werror=implicit-function-declaration]
+cc1.exe: some warnings being treated as errors
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+08:46:06 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c: In function 'SpeakerTask':
+opcontrol.c:76:5: error: implicit declaration of function 'speakerPlayRtttlSetTimeout' [-Werror=implicit-function-declaration]
+opcontrol.c: In function 'speakerPlayRttlSetTimeout':
+opcontrol.c:92:2: error: implicit declaration of function 'speakerPlayRttl' [-Werror=implicit-function-declaration]
+cc1.exe: some warnings being treated as errors
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+08:46:19 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c: In function 'speakerPlayRttlSetTimeout':
+opcontrol.c:71:2: error: implicit declaration of function 'speakerPlayRttl' [-Werror=implicit-function-declaration]
+opcontrol.c: In function 'SpeakerTask':
+opcontrol.c:84:5: error: implicit declaration of function 'speakerPlayRtttlSetTimeout' [-Werror=implicit-function-declaration]
+cc1.exe: some warnings being treated as errors
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+08:47:57 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+auto.c: In function 'speakerPlayRttlSetTimeout':
+auto.c:22:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+In file included from auto.c:6:0:
+../include/main.h:58:6: error: old-style parameter declarations in prototyped function definition
+auto.c:23:1: error: expected '{' at end of input
+make[1]: *** [../bin/auto.o] Error 1
+make: *** [src] Error 2
+08:48:09 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c: In function 'speakerPlayRttlSetTimeout':
+opcontrol.c:71:2: error: implicit declaration of function 'speakerPlayRttl' [-Werror=implicit-function-declaration]
+opcontrol.c: In function 'SpeakerTask':
+opcontrol.c:84:5: error: implicit declaration of function 'speakerPlayRtttlSetTimeout' [-Werror=implicit-function-declaration]
+cc1.exe: some warnings being treated as errors
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+08:49:19 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c: In function 'speakerPlayRttlSetTimeout':
+opcontrol.c:71:2: error: implicit declaration of function 'speakerPlayRttl' [-Werror=implicit-function-declaration]
+opcontrol.c: In function 'SpeakerTask':
+opcontrol.c:84:5: error: implicit declaration of function 'speakerPlayRtttlSetTimeout' [-Werror=implicit-function-declaration]
+cc1.exe: some warnings being treated as errors
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+08:50:44 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c: In function 'SpeakerTask':
+opcontrol.c:76:5: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'char'
+opcontrol.c:79:5: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'char'
+opcontrol.c:82:5: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'char'
+opcontrol.c:85:5: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'char'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13288	      0	   3856	  17144	   42f8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:56:23 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c: In function 'SpeakerTask':
+opcontrol.c:76:5: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'char'
+opcontrol.c:79:5: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'char'
+opcontrol.c:82:5: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'char'
+opcontrol.c:85:5: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'char'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13412	      4	   3860	  17276	   437c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:58:28 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:59:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:59:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:60:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:60:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c:61:3: warning: excess elements in scalar initializer [enabled by default]
+opcontrol.c:61:3: warning: (near initialization for 'songs') [enabled by default]
+opcontrol.c: In function 'SpeakerTask':
+opcontrol.c:76:5: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'char'
+opcontrol.c:79:5: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'char'
+opcontrol.c:82:5: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'char'
+opcontrol.c:85:5: warning: passing argument 1 of 'speakerPlayRtttl' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:460:6: note: expected 'const char *' but argument is of type 'char'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13412	      4	   3860	  17276	   437c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:58:44 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13936	     40	   3856	  17832	   45a8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+09:02:06 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13920	     40	   3856	  17816	   4598	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+09:05:42 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  13920	     40	   3856	  17816	   4598	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:41:53 **** Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'SpeakerTask':
+opcontrol.c:89:5: error: implicit declaration of function 'speakerPlayRttl' [-Werror=implicit-function-declaration]
+cc1.exe: some warnings being treated as errors
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+07:42:16 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14440	     40	   3864	  18344	   47a8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:42:29 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+07:49:19 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14684	     40	   3864	  18588	   489c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:50:58 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14656	     40	   3864	  18560	   4880	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:52:55 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14704	     40	   3864	  18608	   48b0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:55:10 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14632	     40	   3864	  18536	   4868	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:00:23 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14736	     40	   3864	  18640	   48d0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:02:28 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15124	     40	   3864	  19028	   4a54	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:03:36 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+08:12:06 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14692	     40	   3864	  18596	   48a4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:16:26 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14668	     40	   3864	  18572	   488c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:14:14 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14696	     40	   3864	  18600	   48a8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:15:43 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14724	     40	   3864	  18628	   48c4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:15:58 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+08:18:03 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14724	     40	   3864	  18628	   48c4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:51:15 **** Build of configuration Default for project Group 4 ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12184	      0	   3840	  16024	   3e98	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+17:30:11 **** Build of configuration Default for project Can Cleanup ****
+make all 
+Command canceled
+15:07:36 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14752	     40	   3864	  18656	   48e0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+15:08:39 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14752	     40	   3864	  18656	   48e0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+15:56:57 **** Build of configuration Default for project Can Cleanup ****
+make all 
+make[1]: Nothing to be done for `all'.
+15:56:59 **** Incremental Build of configuration Default for project Group 4 ****
+make all 
+make[1]: Nothing to be done for `all'.
+16:05:51 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14944	     40	   3864	  18848	   49a0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:07:42 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+16:07:45 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14952	     40	   3864	  18856	   49a8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:08:59 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14952	     40	   3864	  18856	   49a8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:10:00 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  14952	     40	   3864	  18856	   49a8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:12:33 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+16:22:48 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15188	     40	   3864	  19092	   4a94	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:26:31 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15180	     40	   3864	  19084	   4a8c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:28:47 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15180	     40	   3864	  19084	   4a8c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:29:14 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15180	     40	   3864	  19084	   4a8c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:30:19 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+16:32:27 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15180	     40	   3864	  19084	   4a8c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+17:02:16 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+auto.c: In function 'autonomous':
+auto.c:120:7: error: redefinition of 'Y1'
+auto.c:95:7: note: previous definition of 'Y1' was here
+auto.c:121:7: error: redefinition of 'X1'
+auto.c:96:7: note: previous definition of 'X1' was here
+auto.c:122:7: error: redefinition of 'X2'
+auto.c:94:7: note: previous definition of 'X2' was here
+auto.c:137:7: error: redefinition of 'X2'
+auto.c:122:7: note: previous definition of 'X2' was here
+auto.c:138:7: error: redefinition of 'Y1'
+auto.c:120:7: note: previous definition of 'Y1' was here
+auto.c:139:7: error: redefinition of 'X1'
+auto.c:121:7: note: previous definition of 'X1' was here
+auto.c:154:7: error: redefinition of 'Y1'
+auto.c:138:7: note: previous definition of 'Y1' was here
+auto.c:155:7: error: redefinition of 'X1'
+auto.c:139:7: note: previous definition of 'X1' was here
+auto.c:156:7: error: redefinition of 'X2'
+auto.c:137:7: note: previous definition of 'X2' was here
+auto.c:171:7: error: redefinition of 'X2'
+auto.c:156:7: note: previous definition of 'X2' was here
+auto.c:172:7: error: redefinition of 'Y1'
+auto.c:154:7: note: previous definition of 'Y1' was here
+auto.c:173:7: error: redefinition of 'X1'
+auto.c:155:7: note: previous definition of 'X1' was here
+make[1]: *** [../bin/auto.o] Error 1
+make: *** [src] Error 2
+17:02:58 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+auto.c: In function 'autonomous':
+auto.c:154:7: error: redefinition of 'Y1'
+auto.c:95:7: note: previous definition of 'Y1' was here
+auto.c:155:7: error: redefinition of 'X1'
+auto.c:96:7: note: previous definition of 'X1' was here
+auto.c:156:7: error: redefinition of 'X2'
+auto.c:94:7: note: previous definition of 'X2' was here
+make[1]: *** [../bin/auto.o] Error 1
+make: *** [src] Error 2
+17:03:17 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15716	     44	   3868	  19628	   4cac	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+17:05:50 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15716	     44	   3868	  19628	   4cac	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+17:08:35 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15716	     44	   3868	  19628	   4cac	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+17:09:24 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+17:11:57 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15768	     44	   3868	  19680	   4ce0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+17:45:11 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15652	     44	   3868	  19564	   4c6c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:16:49 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15768	     44	   3868	  19680	   4ce0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:17:04 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+08:29:07 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15768	     44	   3868	  19680	   4ce0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:01:42 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15768	     44	   3868	  19680	   4ce0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:26:53 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15392	     44	   3868	  19304	   4b68	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+10:07:18 **** Incremental Build of configuration Default for project Can Cleanup ****
+make all 
+make[1]: Nothing to be done for `all'.
+10:07:21 **** Incremental Build of configuration Default for project Group 4 ****
+make all 
+make[1]: Nothing to be done for `all'.
+
+**** Build of configuration Debug for project Sandbox ****
+
+Nothing to build for project Sandbox
+10:07:23 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15616	     44	   3868	  19528	   4c48	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+10:07:44 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+10:10:01 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15596	     44	   3868	  19508	   4c34	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+10:14:10 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:142:4: warning: passing argument 1 of 'fgets' from incompatible pointer type [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:895:7: note: expected 'char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15956	     44	   3868	  19868	   4d9c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+10:14:26 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:142:10: warning: 'strBuff' may be used uninitialized in this function [-Wuninitialized]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15956	     44	   3868	  19868	   4d9c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:11:09 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:126:20: error: expected ';' before ':' token
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+11:12:14 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:147:6: error: invalid initializer
+opcontrol.c:154:20: warning: initialization makes pointer from integer without a cast [enabled by default]
+opcontrol.c:155:11: warning: unused variable 'motor' [-Wunused-variable]
+opcontrol.c:154:14: warning: unused variable 'val' [-Wunused-variable]
+opcontrol.c:177:6: error: invalid initializer
+opcontrol.c:184:20: warning: initialization makes pointer from integer without a cast [enabled by default]
+opcontrol.c:185:11: warning: unused variable 'motor' [-Wunused-variable]
+opcontrol.c:184:14: warning: unused variable 'val' [-Wunused-variable]
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+11:12:20 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:147:6: error: invalid initializer
+opcontrol.c:154:20: warning: initialization makes pointer from integer without a cast [enabled by default]
+opcontrol.c:155:11: warning: unused variable 'motor' [-Wunused-variable]
+opcontrol.c:154:14: warning: unused variable 'val' [-Wunused-variable]
+opcontrol.c:177:6: error: invalid initializer
+opcontrol.c:184:20: warning: initialization makes pointer from integer without a cast [enabled by default]
+opcontrol.c:185:11: warning: unused variable 'motor' [-Wunused-variable]
+opcontrol.c:184:14: warning: unused variable 'val' [-Wunused-variable]
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+11:12:32 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:147:6: error: invalid initializer
+opcontrol.c:154:20: warning: initialization makes pointer from integer without a cast [enabled by default]
+opcontrol.c:155:11: warning: unused variable 'motor' [-Wunused-variable]
+opcontrol.c:154:14: warning: unused variable 'val' [-Wunused-variable]
+opcontrol.c:177:6: error: invalid initializer
+opcontrol.c:185:11: warning: unused variable 'motor' [-Wunused-variable]
+opcontrol.c:184:14: warning: unused variable 'val' [-Wunused-variable]
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+11:13:04 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:147:6: error: invalid initializer
+opcontrol.c:154:20: warning: initialization makes pointer from integer without a cast [enabled by default]
+opcontrol.c:155:11: warning: unused variable 'motor' [-Wunused-variable]
+opcontrol.c:154:14: warning: unused variable 'val' [-Wunused-variable]
+opcontrol.c:177:6: error: invalid initializer
+opcontrol.c:185:11: warning: unused variable 'motor' [-Wunused-variable]
+opcontrol.c:184:14: warning: unused variable 'val' [-Wunused-variable]
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+11:53:59 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'str_split':
+opcontrol.c:154:13: error: implicit declaration of function 'assert' [-Werror=implicit-function-declaration]
+cc1.exe: some warnings being treated as errors
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+11:55:14 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:198:11: warning: 'strBuff' may be used uninitialized in this function [-Wuninitialized]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/thumb/v7m\libc.a(lib_a-fflush.o): In function `fflush':
+C:\msys\1.0\home\yagarto\newlib-build\arm-none-eabi\thumb\v7m\newlib\libc\stdio/../../../../../../../newlib-1.20.0/newlib/libc/stdio/fflush.c:241: multiple definition of `fflush'
+./firmware/libccos.a(fs.o):(.text.fflush+0x0): first defined here
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/thumb/v7m\libc.a(lib_a-sbrkr.o): In function `_sbrk_r':
+C:\msys\1.0\home\yagarto\newlib-build\arm-none-eabi\thumb\v7m\newlib\libc\reent/../../../../../../../newlib-1.20.0/newlib/libc/reent/sbrkr.c:58: undefined reference to `_sbrk'
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/thumb/v7m\libc.a(lib_a-signalr.o): In function `_kill_r':
+C:\msys\1.0\home\yagarto\newlib-build\arm-none-eabi\thumb\v7m\newlib\libc\reent/../../../../../../../newlib-1.20.0/newlib/libc/reent/signalr.c:61: undefined reference to `_kill'
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/thumb/v7m\libc.a(lib_a-signalr.o): In function `_getpid_r':
+C:\msys\1.0\home\yagarto\newlib-build\arm-none-eabi\thumb\v7m\newlib\libc\reent/../../../../../../../newlib-1.20.0/newlib/libc/reent/signalr.c:96: undefined reference to `_getpid'
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/thumb/v7m\libc.a(lib_a-writer.o): In function `_write_r':
+C:\msys\1.0\home\yagarto\newlib-build\arm-none-eabi\thumb\v7m\newlib\libc\reent/../../../../../../../newlib-1.20.0/newlib/libc/reent/writer.c:58: undefined reference to `_write'
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/thumb/v7m\libc.a(lib_a-closer.o): In function `_close_r':
+C:\msys\1.0\home\yagarto\newlib-build\arm-none-eabi\thumb\v7m\newlib\libc\reent/../../../../../../../newlib-1.20.0/newlib/libc/reent/closer.c:53: undefined reference to `_close'
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/thumb/v7m\libc.a(lib_a-fstatr.o): In function `_fstat_r':
+C:\msys\1.0\home\yagarto\newlib-build\arm-none-eabi\thumb\v7m\newlib\libc\reent/../../../../../../../newlib-1.20.0/newlib/libc/reent/fstatr.c:62: undefined reference to `_fstat'
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/thumb/v7m\libc.a(lib_a-isattyr.o): In function `_isatty_r':
+C:\msys\1.0\home\yagarto\newlib-build\arm-none-eabi\thumb\v7m\newlib\libc\reent/../../../../../../../newlib-1.20.0/newlib/libc/reent/isattyr.c:58: undefined reference to `_isatty'
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/thumb/v7m\libc.a(lib_a-lseekr.o): In function `_lseek_r':
+C:\msys\1.0\home\yagarto\newlib-build\arm-none-eabi\thumb\v7m\newlib\libc\reent/../../../../../../../newlib-1.20.0/newlib/libc/reent/lseekr.c:58: undefined reference to `_lseek'
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/thumb/v7m\libc.a(lib_a-readr.o): In function `_read_r':
+C:\msys\1.0\home\yagarto\newlib-build\arm-none-eabi\thumb\v7m\newlib\libc\reent/../../../../../../../newlib-1.20.0/newlib/libc/reent/readr.c:58: undefined reference to `_read'
+collect2.exe: error: ld returned 1 exit status
+make: *** [bin/output.elf] Error 1
+12:02:53 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'str_split':
+opcontrol.c:154:13: error: implicit declaration of function 'assert' [-Werror=implicit-function-declaration]
+cc1.exe: some warnings being treated as errors
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+12:03:20 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15616	     44	   3868	  19528	   4c48	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:03:32 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15616	     44	   3868	  19528	   4c48	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:03:53 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/bin/../lib/gcc/arm-none-eabi/4.7.1/../../../../arm-none-eabi/lib/thumb/v7m\libc.a(lib_a-fflush.o): In function `fflush':
+C:\msys\1.0\home\yagarto\newlib-build\arm-none-eabi\thumb\v7m\newlib\libc\stdio/../../../../../../../newlib-1.20.0/newlib/libc/stdio/fflush.c:241: multiple definition of `fflush'
+./firmware/libccos.a(fs.o):(.text.fflush+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [bin/output.elf] Error 1
+13:23:05 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:166:11: warning: variable 'positive' set but not used [-Wunused-but-set-variable]
+opcontrol.c:157:11: warning: 'strBuff' may be used uninitialized in this function [-Wuninitialized]
+opcontrol.c:174:13: warning: 'motorValue' may be used uninitialized in this function [-Wuninitialized]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  16160	     44	   3868	  20072	   4e68	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:23:44 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:174:6: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:166:11: warning: variable 'positive' set but not used [-Wunused-but-set-variable]
+opcontrol.c:157:11: warning: 'strBuff' may be used uninitialized in this function [-Wuninitialized]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  16164	     44	   3868	  20076	   4e6c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+09:43:15 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:163:11: warning: 'strBuff' may be used uninitialized in this function [-Wuninitialized]
+opcontrol.c:172:28: warning: 'substr' may be used uninitialized in this function [-Wuninitialized]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17584	   1120	   3872	  22576	   5830	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:23:57 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+12:47:18 **** Incremental Build of configuration Default for project Group 4 ****
+make all 
+make[1]: Nothing to be done for `all'.
+12:47:21 **** Incremental Build of configuration Debug for project Sandbox ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+/bin/sh: gcc: command not found
+make: *** [main.o] Error 127
+12:47:23 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:168:10: warning: 'strBuff' may be used uninitialized in this function [-Wuninitialized]
+opcontrol.c:178:12: warning: 'substr' may be used uninitialized in this function [-Wuninitialized]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20044	   1120	   3872	  25036	   61cc	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:58:25 **** Incremental Build of configuration Default for project Group 4 ****
+make all 
+make[1]: Nothing to be done for `all'.
+12:58:27 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20044	   1120	   3872	  25036	   61cc	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:03:00 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20044	   1120	   3872	  25036	   61cc	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:03:54 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20044	   1120	   3872	  25036	   61cc	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:14:24 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+13:22:47 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20084	   1120	   3880	  25084	   61fc	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:23:59 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20084	   1120	   3880	  25084	   61fc	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:28:46 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20124	   1120	   3880	  25124	   6224	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:37:29 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20124	   1120	   3880	  25124	   6224	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:39:16 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  16200	     44	   3876	  20120	   4e98	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:39:33 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+13:41:29 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  16200	     44	   3876	  20120	   4e98	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:45:40 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  16200	     44	   3876	  20120	   4e98	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:51:46 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  18548	     44	   3876	  22468	   57c4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:52:59 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  18548	     44	   3876	  22468	   57c4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:54:33 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  18548	     44	   3876	  22468	   57c4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:56:06 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  18548	     44	   3876	  22468	   57c4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:56:54 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  18548	     44	   3876	  22468	   57c4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:58:30 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20136	   1120	   3880	  25136	   6230	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:59:09 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20136	   1120	   3880	  25136	   6230	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:59:38 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20136	   1120	   3880	  25136	   6230	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+14:01:22 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20188	   1120	   3880	  25188	   6264	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+14:02:33 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:200:21: warning: comparison between pointer and integer [enabled by default]
+opcontrol.c:203:28: warning: comparison between pointer and integer [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20160	   1120	   3880	  25160	   6248	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+14:04:38 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:200:5: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:30:6: note: expected 'const char *' but argument is of type 'char'
+opcontrol.c:200:5: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:30:6: note: expected 'const char *' but argument is of type 'int'
+opcontrol.c:203:5: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:30:6: note: expected 'const char *' but argument is of type 'char'
+opcontrol.c:203:5: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:30:6: note: expected 'const char *' but argument is of type 'int'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20684	   1120	   3880	  25684	   6454	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:36:35 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20188	   1120	   3880	  25188	   6264	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:47:03 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:180:4: warning: passing argument 1 of 'fgets' from incompatible pointer type [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:896:7: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:181:20: warning: initialization makes integer from pointer without a cast [enabled by default]
+opcontrol.c:184:5: warning: format '%c' expects argument of type 'int', but argument 3 has type 'char *' [-Wformat]
+opcontrol.c:194:5: warning: passing argument 1 of 'strlen' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:35:9: note: expected 'const char *' but argument is of type 'char **'
+opcontrol.c:194:5: warning: passing argument 2 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20196	   1120	   3880	  25196	   626c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:47:45 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:180:4: warning: passing argument 1 of 'fgets' from incompatible pointer type [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:896:7: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:181:20: warning: initialization makes integer from pointer without a cast [enabled by default]
+opcontrol.c:194:5: warning: passing argument 1 of 'strlen' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:35:9: note: expected 'const char *' but argument is of type 'char **'
+opcontrol.c:194:5: warning: passing argument 2 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20196	   1120	   3880	  25196	   626c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:48:22 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:183:32: error: 'axisChar' undeclared (first use in this function)
+opcontrol.c:183:32: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+07:48:37 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:200:9: error: 'axisChar' undeclared (first use in this function)
+opcontrol.c:200:9: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+07:54:04 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:203:21: warning: comparison between pointer and integer [enabled by default]
+opcontrol.c:206:28: warning: comparison between pointer and integer [enabled by default]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20168	   1120	   3880	  25168	   6250	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:08:29 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:203:21: warning: comparison with string literal results in unspecified behavior [-Waddress]
+opcontrol.c:206:28: warning: comparison with string literal results in unspecified behavior [-Waddress]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20128	   1120	   3880	  25128	   6228	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:09:47 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20204	   1120	   3880	  25204	   6274	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+09:51:42 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20228	   1120	   3880	  25228	   628c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+09:51:52 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20228	   1120	   3880	  25228	   628c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:22:33 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20236	   1120	   3880	  25236	   6294	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:33:41 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+07:33:58 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+07:40:42 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:202:5: warning: format '%c' expects argument of type 'int', but argument 3 has type 'char *' [-Wformat]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20268	   1120	   3880	  25268	   62b4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:42:25 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:202:5: warning: format '%c' expects argument of type 'int', but argument 3 has type 'char *' [-Wformat]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20268	   1120	   3880	  25268	   62b4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:43:54 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20268	   1120	   3880	  25268	   62b4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:48:52 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20364	   1120	   3880	  25364	   6314	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:51:02 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20476	   1120	   3880	  25476	   6384	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:52:01 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20476	   1120	   3880	  25476	   6384	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:52:13 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20476	   1120	   3880	  25476	   6384	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:54:16 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:202:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:204:5: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'char **' [-Wformat]
+opcontrol.c:206:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20452	   1120	   3880	  25452	   636c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:55:45 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:202:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:204:5: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'char **' [-Wformat]
+opcontrol.c:206:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20452	   1120	   3880	  25452	   636c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:07:09 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:212:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:214:5: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'char **' [-Wformat]
+opcontrol.c:216:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20508	   1120	   3888	  25516	   63ac	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:09:33 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:212:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:214:5: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'char **' [-Wformat]
+opcontrol.c:216:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20476	   1120	   3888	  25484	   638c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:15:35 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:214:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:216:5: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'char **' [-Wformat]
+opcontrol.c:218:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20508	   1120	   3888	  25516	   63ac	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:16:38 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:214:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:216:5: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'char **' [-Wformat]
+opcontrol.c:218:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20500	   1120	   3888	  25508	   63a4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+09:45:27 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:207:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:208:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17796	   1120	   3888	  22804	   5914	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+09:53:20 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:202:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:203:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17776	   1120	   3888	  22784	   5900	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+10:51:01 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:192:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:193:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17780	   1120	   3880	  22780	   58fc	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+10:51:15 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:189:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:190:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17764	   1120	   3880	  22764	   58ec	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+10:53:21 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:176:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:177:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17752	   1120	   3880	  22752	   58e0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+10:54:06 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:173:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:174:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17752	   1120	   3880	  22752	   58e0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:22:55 **** Build of configuration Default for project Group 6 ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:73:2: error: implicit declaration of function 'taskCrate' [-Werror=implicit-function-declaration]
+opcontrol.c:73:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+cc1.exe: some warnings being treated as errors
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+12:23:12 **** Incremental Build of configuration Default for project Group 6 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12172	      0	   3848	  16020	   3e94	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:27:51 **** Incremental Build of configuration Default for project Group 6 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12172	      0	   3848	  16020	   3e94	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:28:22 **** Incremental Build of configuration Default for project Group 6 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12388	      0	   3848	  16236	   3f6c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:31:53 **** Incremental Build of configuration Default for project Group 6 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12432	      0	   3848	  16280	   3f98	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:34:29 **** Incremental Build of configuration Default for project Group 6 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12472	      0	   3848	  16320	   3fc0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:49:05 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'TelemetryTask':
+opcontrol.c:131:17: warning: unused variable 'mainBattery' [-Wunused-variable]
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:193:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:194:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17776	   1120	   3888	  22784	   5900	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:49:30 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'TelemetryTask':
+opcontrol.c:133:9: warning: unused variable 'secondsSinceStart' [-Wunused-variable]
+opcontrol.c:132:17: warning: unused variable 'backupBattery' [-Wunused-variable]
+opcontrol.c:131:17: warning: unused variable 'mainBattery' [-Wunused-variable]
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:195:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:196:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17776	   1120	   3888	  22784	   5900	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:50:02 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'TelemetryTask':
+opcontrol.c:133:11: warning: unused variable 'secondsSinceStart' [-Wunused-variable]
+opcontrol.c:132:17: warning: unused variable 'backupBattery' [-Wunused-variable]
+opcontrol.c:131:17: warning: unused variable 'mainBattery' [-Wunused-variable]
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:195:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:196:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17776	   1120	   3888	  22784	   5900	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:52:07 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'TelemetryTask':
+opcontrol.c:135:4: warning: format '%d' expects argument of type 'int', but argument 5 has type 'double' [-Wformat]
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:196:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:197:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17788	   1120	   3888	  22796	   590c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:52:19 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:196:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:197:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17788	   1120	   3888	  22796	   590c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:40:27 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+07:41:39 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:196:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:197:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20228	   1120	   3888	  25236	   6294	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:43:42 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:196:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:197:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20228	   1120	   3888	  25236	   6294	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:45:23 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:196:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:197:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20232	   1120	   3888	  25240	   6298	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:46:16 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:196:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:197:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20088	   1120	   3888	  25096	   6208	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:01:11 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:180:7: warning: passing argument 1 of 'fprintf' from incompatible pointer type [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:1055:5: note: expected 'FILE *' but argument is of type 'char *'
+opcontrol.c:180:7: error: too few arguments to function 'fprintf'
+opcontrol.c:182:7: warning: passing argument 1 of 'fprintf' from incompatible pointer type [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:7:
+../include/API.h:1055:5: note: expected 'FILE *' but argument is of type 'char *'
+opcontrol.c:182:7: error: too few arguments to function 'fprintf'
+opcontrol.c:201:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:202:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+08:01:32 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:201:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:202:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20264	   1120	   3888	  25272	   62b8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+08:07:04 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+make[1]: Nothing to be done for `all'.
+08:08:21 **** Incremental Build of configuration Default for project Skyrise Bot ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:201:5: warning: passing argument 1 of 'strncpy' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:46:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/string.h:38:8: note: expected 'char *' but argument is of type 'char **'
+opcontrol.c:202:5: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+In file included from ../include/API.h:43:0,
+                 from ../include/main.h:46,
+                 from opcontrol.c:7:
+c:/users/joshua.ferrara/desktop/pros/$_outdir/toolchain/lib/gcc/../../arm-none-eabi/include/stdlib.h:69:5: note: expected 'const char *' but argument is of type 'char **'
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  20264	   1120	   3888	  25272	   62b8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:35:09 **** Incremental Build of configuration Default for project Group 4 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12244	      0	   3840	  16084	   3ed4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:48:30 **** Incremental Build of configuration Default for project Group 4 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12424	      0	   3840	  16264	   3f88	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:50:07 **** Incremental Build of configuration Default for project Group 4 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12424	      0	   3840	  16264	   3f88	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:26:58 **** Build of configuration Default for project Group 5 ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12372	      0	   3840	  16212	   3f54	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:29:45 **** Incremental Build of configuration Default for project Group 5 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12372	      0	   3840	  16212	   3f54	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:33:58 **** Build of configuration Default for project Group 6 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12472	      0	   3848	  16320	   3fc0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:34:52 **** Incremental Build of configuration Default for project Group 6 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12472	      0	   3848	  16320	   3fc0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:35:37 **** Incremental Build of configuration Default for project Group 6 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12472	      0	   3848	  16320	   3fc0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:38:47 **** Incremental Build of configuration Default for project Group 6 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12520	      0	   3848	  16368	   3ff0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:40:26 **** Incremental Build of configuration Default for project Group 6 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12520	      0	   3848	  16368	   3ff0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:41:47 **** Incremental Build of configuration Default for project Group 6 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12516	      0	   3848	  16364	   3fec	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:35:20 **** Build of configuration Default for project Group 4 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12424	      0	   3840	  16264	   3f88	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:38:31 **** Incremental Build of configuration Default for project Group 4 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12424	      0	   3840	  16264	   3f88	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+07:39:06 **** Incremental Build of configuration Default for project Group 4 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12424	      0	   3840	  16264	   3f88	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin

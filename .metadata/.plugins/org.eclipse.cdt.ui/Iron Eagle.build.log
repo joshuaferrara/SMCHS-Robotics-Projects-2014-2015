@@ -1,0 +1,12 @@
+09:10:18 **** Incremental Build of configuration Default for project Iron Eagle ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  11580	      0	   3840	  15420	   3c3c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+
+09:10:21 Build Finished (took 2s.734ms)
+

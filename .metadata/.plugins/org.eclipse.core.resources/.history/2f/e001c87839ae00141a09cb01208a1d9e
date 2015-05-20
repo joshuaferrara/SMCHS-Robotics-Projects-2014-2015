@@ -1,0 +1,90 @@
+/** @file opcontrol.c
+ * @brief File for operator control code
+ *
+ * This file should contain the user operatorControl() function and any functions related to it.
+ */
+
+#include "main.h"
+
+
+/** Variable to hold reference to the drive task */
+TaskHandle drivingTask;
+/** Variable to hold reference to the manipulator task */
+TaskHandle manipulatorTask;
+/** Variable to hold reference to the speaker task */
+TaskHandle speakerTask;
+
+/**
+ * This task drives the motors required to move the robot.
+ * 	Front Left = 2
+ * 	Front Right = 3
+ * 	Back Left = 4
+ * 	Back Right = 5
+ */
+void DrivingTask(void *arg) {
+	int X2 = 0, Y1 = 0, X1 = 0, threshold = 15;
+	while (1) {
+		Y1 = (abs(joystickGetAnalog(1, 4)) > threshold ? joystickGetAnalog(1, 4) : 0);
+		X1 = (abs(joystickGetAnalog(1, 1)) > threshold ? joystickGetAnalog(1, 1) : 0);
+		X2 = (abs(joystickGetAnalog(1, 3)) > threshold ? -joystickGetAnalog(1, 3) : 0);
+
+		if (X1 < 14 && X1 > -14) {
+			motorSet(2, Y1 + X2 + X1);
+			motorSet(3, Y1 - X2 - X1);
+			motorSet(4, Y1 + X2 - X1);
+			motorSet(5, Y1 - X2 + X1);
+		} else {
+			//if (X1 > 0) {
+				motorSet(2, -X1);
+				motorSet(5, X1);
+				motorSet(3, -X1);
+				motorSet(4, X1);
+			//} else {
+
+			//}
+		}
+	}
+}
+
+/**
+ * This task drives the motors required to use our manipulator.
+ */
+void ManipulatorTask(void *arg) {
+
+}
+
+/** RTTL songs */
+const char * const songs = {
+		"Ride:d=4,o=5,b=160:a,32e,8a,c6,8p,a,8p,c6,32a,8c6,e6,8p,c6,8p,e6,32c6,8e6,g6,8p, g,8p,c6,32g,8c6,2e6,p",
+		"TakeOnMe:d=4,o=4,b=160:8f#5,8f#5,8f#5,8d5,8p,8b,8p,8e5,8p,8e5,8p,8e5,8g#5,8g#5,8a5,8b5,8a5,8a5,8a5,8e5,8p,8d5,8p,8f#5,8p,8f#5,8p,8f#5,8e5,8e5,8f#5,8e5,8f#5,8f#5,8f#5,8d5,8p,8b,8p,8e5,8p,8e5,8p,8e5,8g#5,8g#5,8a5,8b5,8a5,8a5,8a5,8e5,8p,8d5,8p,8f#5,8p,8f#5,8p,8f#5,8e5,8e5",
+		"MonkeyWr:d=32,o=6,b=45:g,g,f,f,e,e,d,d,f,f,e,e,d,d,c,c,d,d,c,c,a5,a5,c,c,d,d,c,c,d,d,e,d,g,g,f,f,e,e,d,d,f,f,e,e,d,d,c,c,d,d,c,c,a5,a5,c,c,d,d,c,c,d,d,e,d",
+		"MyHero:d=16,o=6,b=40:32p,c,c,d.,c,8c.,a5,32c,4a5,c,c,d.,c,8c.,a5,32c,4a5,8e,8f,g.,32f,32d,32d,8c.,32c,32a,g,g,f,8c",
+};
+
+/** Last time a song was played */
+long lastPlayed;
+
+/**
+ * This task controls the output of the speaker on our robot.
+ */
+void SpeakerTask(void *arg) {
+	speakerInit();
+	speakerPlayRtttl("d=4,o=4,b=160:8f#5,8f#5,8f#5,8d5,8p,8b,8p,8e5,8p,8e5,8p,8e5,8g#5,8g#5,8a5,8b5,8a5,8a5,8a5,8e5,8p,8d5,8p,8f#5,8p,8f#5,8p,8f#5,8e5,8e5,8f#5,8e5,8f#5,8f#5,8f#5,8d5,8p,8b,8p,8e5,8p,8e5,8p,8e5,8g#5,8g#5,8a5,8b5,8a5,8a5,8a5,8e5,8p,8d5,8p,8f#5,8p,8f#5,8p,8f#5,8e5,8e5");
+	lastPlayed = millis();
+	while (1) {
+		if (lastPlayed + 10000 < millis()) {
+
+			lastPlayed = millis();
+		}
+	}
+}
+
+void operatorControl() {
+	drivingTask = taskCreate(DrivingTask, TASK_DEFAULT_STACK_SIZE, NULL, TASK_PRIORITY_DEFAULT);
+	manipulatorTask = taskCreate(ManipulatorTask, TASK_DEFAULT_STACK_SIZE, NULL, TASK_PRIORITY_DEFAULT);
+	speakerTask = taskCreate(SpeakerTask, TASK_DEFAULT_STACK_SIZE, NULL, TASK_PRIORITY_DEFAULT);
+
+	while(1) {
+		//This method should never exit, loop is necessary to keep robot running.
+	}
+}

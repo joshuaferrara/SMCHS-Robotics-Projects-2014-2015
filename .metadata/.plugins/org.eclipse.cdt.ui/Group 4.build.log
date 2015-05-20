@@ -1,0 +1,10 @@
+07:39:06 **** Incremental Build of configuration Default for project Group 4 ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12424	      0	   3840	  16264	   3f88	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+
+07:39:08 Build Finished (took 1s.684ms)
+

@@ -1,0 +1,6 @@
+10:07:18 **** Incremental Build of configuration Default for project Can Cleanup ****
+make all 
+make[1]: Nothing to be done for `all'.
+
+10:07:19 Build Finished (took 1s.299ms)
+
