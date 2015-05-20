@@ -1,0 +1,3 @@
+[submodule "Skyrise Bot"]
+    path = "Skyrise Bot"
+    url = git://github.com/joshuaferrara/VEX-Robotics-Robot-Control-Code.git
